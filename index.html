@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Discover Mt. Balungao Hilltop Adventure and Hot Spring Resort in Balungao, Pangasinan."
+    >
+
+    <title>Mt. Balungao Hilltop Adventure</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- External JavaScript -->
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+        <!-- =========================================
+            ACCESSIBILITY SKIP LINK
+        ========================================== -->
+    <a href="#main-content" class="skip-link">
+           Skip to main content
+    </a>
+
+    <!-- =========================================
+         NAVIGATION BAR
+    ========================================== -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <button
+                type="button"
+                class="brand"
+                onclick="showPage('home', this)"
+                aria-label="Go to home page"
+            >
+                <span class="brand-icon" aria-hidden="true">⛰</span>
+
+                <span class="brand-text">
+                    <strong>Mt. Balungao</strong>
+                    <small>Hilltop Adventure</small>
+                </span>
+            </button>
+
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <button
+                    type="button"
+                    class="nav-btn active"
+                    data-page="home"
+                    onclick="showPage('home', this)"
+                >
+                    Home
+                </button>
+
+                <button
+                    type="button"
+                    class="nav-btn"
+                    data-page="about"
+                    onclick="showPage('about', this)"
+                >
+                    About
+                </button>
+
+                <button
+                    type="button"
+                    class="nav-btn"
+                    data-page="contact"
+                    onclick="showPage('contact', this)"
+                >
+                    Contact
+                </button>
+
+                <button
+                    type="button"
+                    class="nav-cta"
+                    onclick="showPage('contact', this)"
+                >
+                    Plan Your Visit
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- =========================================
+         MAIN WEBSITE CONTENT
+    ========================================== -->
+    <main id="main-content">
+
+        <!-- =====================================
+             HOME / LANDING PAGE
+        ====================================== -->
+        <section
+            id="page-home"
+            class="page active"
+            aria-labelledby="home-title"
+        >
+
+            <!-- HERO SECTION -->
+            <section class="hero">
+                <div class="hero-overlay"></div>
+
+                <div class="hero-content container">
+                    <p class="eyebrow">
+                        Adventure meets relaxation
+                    </p>
+
+                    <h1 id="home-title">
+                        Experience the Beauty of
+                        <span>Mt. Balungao</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Discover natural hot and cold springs, exciting
+                        outdoor activities, and beautiful mountain scenery
+                        in Balungao, Pangasinan.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#featured-adventures" class="btn btn-primary">
+                            Explore Adventures
+                        </a>
+
+                        <button
+                            type="button"
+                            class="btn btn-outline"
+                            onclick="showPage('contact', this)"
+                        >
+                            Contact Us
+                        </button>
+                    </div>
+
+                    <div class="hero-location">
+                        <span aria-hidden="true">📍</span>
+                        <span>Balungao, Pangasinan, Philippines</span>
+                    </div>
+                </div>
+
+                <a href="#quick-highlights" class="scroll-indicator">
+                    <span>Discover</span>
+                    <span class="scroll-arrow" aria-hidden="true">↓</span>
+                </a>
+            </section>
+
+            <!-- QUICK HIGHLIGHTS -->
+            <section
+                class="section highlights-section"
+                id="quick-highlights"
+            >
+                <div class="container">
+
+                    <div class="section-heading">
+                        <p class="section-label">Resort highlights</p>
+
+                        <h2>One Destination, Many Experiences</h2>
+
+                        <p>
+                            Whether you are looking for adventure or
+                            relaxation, Mt. Balungao offers activities
+                            for families, friends, and groups.
+                        </p>
+                    </div>
+
+                    <div class="highlights-grid">
+
+                        <article class="highlight-card reveal">
+                            <div class="highlight-icon" aria-hidden="true">
+                                ♨️
+                            </div>
+
+                            <h3>Hot & Cold Springs</h3>
+
+                            <p>
+                                Relax and refresh in spring pools surrounded
+                                by the natural scenery of Mt. Balungao.
+                            </p>
+                        </article>
+
+                        <article class="highlight-card reveal">
+                            <div class="highlight-icon" aria-hidden="true">
+                                🪂
+                            </div>
+
+                            <h3>Zipline Adventure</h3>
+
+                            <p>
+                                Glide above the landscape and experience
+                                an exciting view of the surrounding area.
+                            </p>
+                        </article>
+
+                        <article class="highlight-card reveal">
+                            <div class="highlight-icon" aria-hidden="true">
+                                🏍️
+                            </div>
+
+                            <h3>ATV Experience</h3>
+
+                            <p>
+                                Enjoy an outdoor ride while exploring the
+                                rugged terrain around the resort.
+                            </p>
+                        </article>
+
+                        <article class="highlight-card reveal">
+                            <div class="highlight-icon" aria-hidden="true">
+                                ⛰️
+                            </div>
+
+                            <h3>Mountain Scenery</h3>
+
+                            <p>
+                                Appreciate the fresh air and scenic landscape
+                                surrounding Mt. Balungao.
+                            </p>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- FEATURED ADVENTURES -->
+            <section
+                class="section adventures-section"
+                id="featured-adventures"
+            >
+                <div class="container">
+
+                    <div class="section-heading heading-light">
+                        <p class="section-label">Things to do</p>
+
+                        <h2>Featured Adventures</h2>
+
+                        <p>
+                            Create memorable experiences with a combination
+                            of thrilling activities and peaceful relaxation.
+                        </p>
+                    </div>
+
+                    <div class="adventure-grid">
+
+                        <article class="adventure-card reveal">
+                            <div class="adventure-image">
+                                <img src="images/zipline.jpg" alt="Zipline adventure above the resort landscape">
+
+                                <span class="card-category">
+                                    Adventure
+                                </span>
+                            </div>
+
+                            <div class="adventure-content">
+                                <h3>Zipline Experience</h3>
+
+                                <p>
+                                    Soar across the landscape and take in
+                                    elevated views of Mt. Balungao and its
+                                    beautiful surroundings.
+                                </p>
+
+                                <button
+                                    type="button"
+                                    class="text-button"
+                                    onclick="showPage('about', this)"
+                                >
+                                    Learn more
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="adventure-card reveal">
+                            <div class="adventure-image">
+                                <img src="images/atv.jpg" alt="ATV trail adventure near Mt. Balungao">
+
+                                <span class="card-category">
+                                    Outdoor
+                                </span>
+                            </div>
+
+                            <div class="adventure-content">
+                                <h3>ATV Trail Adventure</h3>
+
+                                <p>
+                                    Experience an exciting ride while
+                                    navigating outdoor terrain near the
+                                    hilltop resort.
+                                </p>
+
+                                <button
+                                    type="button"
+                                    class="text-button"
+                                    onclick="showPage('about', this)"
+                                >
+                                    Learn more
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="adventure-card reveal">
+                            <div class="adventure-image">
+                                <img src="images/hiking.jpg" alt="Hiking trail through the mountain scenery">
+
+                                <span class="card-category">
+                                    Nature
+                                </span>
+                            </div>
+
+                            <div class="adventure-content">
+                                <h3>Hiking & Trekking</h3>
+
+                                <p>
+                                    Explore outdoor trails, connect with
+                                    nature, and appreciate the scenery around
+                                    Mt. Balungao.
+                                </p>
+
+                                <button
+                                    type="button"
+                                    class="text-button"
+                                    onclick="showPage('about', this)"
+                                >
+                                    Learn more
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="adventure-card reveal">
+                            <div class="adventure-image">
+                                <img src="images/hot-spring.jpg" alt="Hot spring pool at the resort">
+
+                                <span class="card-category">
+                                    Relaxation
+                                </span>
+                            </div>
+
+                            <div class="adventure-content">
+                                <h3>Spring Pools</h3>
+
+                                <p>
+                                    Take a refreshing break and enjoy the
+                                    resort's hot and cold spring pool
+                                    experience.
+                                </p>
+
+                                <button
+                                    type="button"
+                                    class="text-button"
+                                    onclick="showPage('about', this)"
+                                >
+                                    Learn more
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- WHY VISIT SECTION -->
+            <section class="section why-section">
+                <div class="container why-grid">
+
+                    <div class="why-image reveal">
+                        <img src="images/about-resort.jpg" alt="Scenic view of Mt. Balungao resort">
+
+                        <div class="image-badge">
+                            <strong>Adventure</strong>
+                            <span>and relaxation in one place</span>
+                        </div>
+                    </div>
+
+                    <div class="why-content reveal">
+                        <p class="section-label">Why visit us?</p>
+
+                        <h2>
+                            Escape, Explore, and Experience Mt. Balungao
+                        </h2>
+
+                        <p>
+                            Mt. Balungao Hilltop Adventure and Hot Spring
+                            Resort brings together nature, recreation, and
+                            relaxation in one destination.
+                        </p>
+
+                        <p>
+                            Spend your day enjoying spring pools, challenging
+                            yourself with outdoor activities, or simply
+                            appreciating the peaceful mountain environment.
+                        </p>
+
+                        <ul class="feature-list">
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Natural hot and cold spring pools
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Outdoor adventure activities
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Scenic mountain environment
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Activities for friends and families
+                            </li>
+                        </ul>
+
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            onclick="showPage('about', this)"
+                        >
+                            Discover Our Story
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- VISITOR INFORMATION -->
+            <section class="section visitor-section">
+                <div class="container">
+
+                    <div class="section-heading">
+                        <p class="section-label">Plan your getaway</p>
+
+                        <h2>Visitor Information</h2>
+
+                        <p>
+                            Here is a quick overview to help you prepare
+                            for your Mt. Balungao experience.
+                        </p>
+                    </div>
+
+                    <div class="visitor-grid">
+
+                        <article class="visitor-card reveal">
+                            <span class="visitor-icon" aria-hidden="true">
+                                📍
+                            </span>
+
+                            <div>
+                                <h3>Location</h3>
+                                <p>
+                                    Mt. Balungao Road, Balungao,
+                                    Pangasinan, Philippines
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="visitor-card reveal">
+                            <span class="visitor-icon" aria-hidden="true">
+                                🎯
+                            </span>
+
+                            <div>
+                                <h3>Activities</h3>
+                                <p>
+                                    Spring pools, zipline, ATV riding,
+                                    hiking, and trekking
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="visitor-card reveal">
+                            <span class="visitor-icon" aria-hidden="true">
+                                🏡
+                            </span>
+
+                            <div>
+                                <h3>Facilities</h3>
+                                <p>
+                                    Swimming pools, accommodation, cottages,
+                                    and function areas
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- FINAL CALL TO ACTION -->
+            <section class="home-cta">
+                <div class="home-cta-overlay"></div>
+
+                <div class="container home-cta-content">
+                    <p class="section-label">Your adventure awaits</p>
+
+                    <h2>Ready for Your Next Adventure?</h2>
+
+                    <p>
+                        Discover the exciting and relaxing experiences
+                        waiting for you at Mt. Balungao.
+                    </p>
+
+                    <div class="cta-actions">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            onclick="showPage('contact', this)"
+                        >
+                            Contact the Resort
+                        </button>
+
+                        <button
+                            type="button"
+                            class="btn btn-outline"
+                            onclick="showPage('about', this)"
+                        >
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- =====================================
+             ABOUT PAGE
+        ====================================== -->
+        <section
+            id="page-about"
+            class="page"
+            aria-labelledby="about-title"
+        >
+
+            <!-- ABOUT PAGE BANNER -->
+            <section class="page-banner about-banner">
+                <div class="page-banner-overlay"></div>
+
+                <div class="container page-banner-content">
+                    <p class="eyebrow">Discover our destination</p>
+
+                    <h1 id="about-title">About Mt. Balungao</h1>
+
+                    <p>
+                        A destination where natural springs, mountain
+                        scenery, and outdoor recreation come together.
+                    </p>
+                </div>
+            </section>
+
+            <!-- OUR STORY -->
+            <section class="section story-section">
+                <div class="container story-grid">
+
+                    <div class="story-content reveal">
+                        <p class="section-label">Our destination</p>
+
+                        <h2>Adventure and Relaxation in Pangasinan</h2>
+
+                        <p>
+                            Mt. Balungao Hilltop Adventure and Hot Spring
+                            Resort is located in Balungao, Pangasinan. It
+                            combines refreshing spring pools with outdoor
+                            adventure activities in a mountain setting.
+                        </p>
+
+                        <p>
+                            Visitors can relax in hot and cold spring pools
+                            or participate in recreational activities such
+                            as zipline riding, ATV driving, hiking, and
+                            trekking.
+                        </p>
+
+                        <p>
+                            The resort provides an experience suited for
+                            individuals, families, friends, and groups
+                            looking for both recreation and relaxation.
+                        </p>
+                    </div>
+
+                    <div class="story-image reveal">
+                        <img src="images/about-resort.jpg" alt="Scenic view of Mt. Balungao resort">
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- MISSION AND VISION -->
+            <section class="section purpose-section">
+                <div class="container">
+
+                    <div class="section-heading heading-light">
+                        <p class="section-label">Our purpose</p>
+
+                        <h2>Mission & Vision</h2>
+
+                        <p>
+                            These statements are proposed content for this
+                            educational website project.
+                        </p>
+                    </div>
+
+                    <div class="purpose-grid">
+
+                        <article class="purpose-card reveal">
+                            <div class="purpose-number">01</div>
+                            <div class="purpose-icon" aria-hidden="true">🎯</div>
+
+                            <h3>Our Mission</h3>
+
+                            <p>
+                                To provide visitors with a safe, enjoyable,
+                                and memorable destination that combines
+                                outdoor adventure, natural relaxation, and
+                                Filipino hospitality.
+                            </p>
+                        </article>
+
+                        <article class="purpose-card reveal">
+                            <div class="purpose-number">02</div>
+                            <div class="purpose-icon" aria-hidden="true">👁️</div>
+
+                            <h3>Our Vision</h3>
+
+                            <p>
+                                To be recognized as an inviting nature and
+                                adventure destination that showcases the
+                                beauty and tourism potential of Balungao,
+                                Pangasinan.
+                            </p>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACTIVITIES -->
+            <section class="section about-activities">
+                <div class="container">
+
+                    <div class="section-heading">
+                        <p class="section-label">Explore more</p>
+
+                        <h2>Activities at Mt. Balungao</h2>
+
+                        <p>
+                            Choose an activity that matches your preferred
+                            balance of excitement and relaxation.
+                        </p>
+                    </div>
+
+                    <div class="simple-card-grid">
+
+                        <article class="simple-card reveal">
+                            <span aria-hidden="true">🪂</span>
+                            <h3>Zipline</h3>
+                            <p>
+                                Enjoy an elevated ride while viewing the
+                                landscape surrounding Mt. Balungao.
+                            </p>
+                        </article>
+
+                        <article class="simple-card reveal">
+                            <span aria-hidden="true">🏍️</span>
+                            <h3>ATV Riding</h3>
+                            <p>
+                                Explore outdoor terrain through an exciting
+                                all-terrain vehicle experience.
+                            </p>
+                        </article>
+
+                        <article class="simple-card reveal">
+                            <span aria-hidden="true">🥾</span>
+                            <h3>Hiking</h3>
+                            <p>
+                                Walk through natural surroundings and
+                                experience the outdoor environment.
+                            </p>
+                        </article>
+
+                        <article class="simple-card reveal">
+                            <span aria-hidden="true">♨️</span>
+                            <h3>Spring Pools</h3>
+                            <p>
+                                Relax and recover in the resort's hot and
+                                cold spring pool areas.
+                            </p>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- FACILITIES -->
+            <section class="section facilities-section">
+                <div class="container facilities-grid">
+
+                    <div class="facilities-copy reveal">
+                        <p class="section-label">More than adventure</p>
+
+                        <h2>Resort Facilities</h2>
+
+                        <p>
+                            The destination includes facilities that support
+                            day trips, group outings, celebrations, and
+                            longer resort visits.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            onclick="showPage('contact', this)"
+                        >
+                            Send an Inquiry
+                        </button>
+                    </div>
+
+                    <div class="facility-list">
+
+                        <article class="facility-item reveal">
+                            <span aria-hidden="true">🏊</span>
+
+                            <div>
+                                <h3>Spring Pools</h3>
+                                <p>
+                                    Areas for swimming, recreation,
+                                    and relaxation.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="facility-item reveal">
+                            <span aria-hidden="true">🛏️</span>
+
+                            <div>
+                                <h3>Accommodation</h3>
+                                <p>
+                                    Rooms for visitors who want to stay
+                                    longer at the resort.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="facility-item reveal">
+                            <span aria-hidden="true">🏡</span>
+
+                            <div>
+                                <h3>Cottages</h3>
+                                <p>
+                                    Spaces for families and groups to rest
+                                    during their visit.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="facility-item reveal">
+                            <span aria-hidden="true">🎉</span>
+
+                            <div>
+                                <h3>Function Areas</h3>
+                                <p>
+                                    Facilities that may be used for
+                                    gatherings and organized events.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- =====================================
+             CONTACT PAGE
+        ====================================== -->
+        <section
+            id="page-contact"
+            class="page"
+            aria-labelledby="contact-title"
+        >
+
+            <!-- CONTACT BANNER -->
+            <section class="page-banner contact-banner">
+                <div class="page-banner-overlay"></div>
+
+                <div class="container page-banner-content">
+                    <p class="eyebrow">We would love to hear from you</p>
+
+                    <h1 id="contact-title">Plan Your Visit</h1>
+
+                    <p>
+                        Send an inquiry and start planning your
+                        Mt. Balungao experience.
+                    </p>
+                </div>
+            </section>
+
+            <!-- CONTACT INFORMATION AND FORM -->
+            <section class="section contact-section">
+                <div class="container contact-layout">
+
+                    <div class="contact-details reveal">
+                        <p class="section-label">Contact information</p>
+
+                        <h2>Get in Touch</h2>
+
+                        <p class="contact-intro">
+                            Use the information below or complete the inquiry
+                            form for questions about resort facilities and
+                            activities.
+                        </p>
+
+                        <div class="contact-list">
+
+                            <article class="contact-item">
+                                <span class="contact-icon" aria-hidden="true">
+                                    📍
+                                </span>
+
+                                <div>
+                                    <h3>Location</h3>
+                                    <p>
+                                        Mt. Balungao Road, Balungao,
+                                        Pangasinan, Philippines
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="contact-item">
+                                <span class="contact-icon" aria-hidden="true">
+                                    📞
+                                </span>
+
+                                <div>
+                                    <h3>Mobile Number</h3>
+                                    <a href="tel:+639325358687">
+                                        0932 535 8687
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="contact-item">
+                                <span class="contact-icon" aria-hidden="true">
+                                    ✉️
+                                </span>
+
+                                <div>
+                                    <h3>Email Address</h3>
+                                    <a href="mailto:hilltop@balungao.gov.ph">
+                                        hilltop@balungao.gov.ph
+                                    </a>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <div class="contact-note">
+                            <strong>Important:</strong>
+
+                            <p>
+                                Confirm current schedules, prices,
+                                availability, and contact details directly
+                                with the resort before traveling.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CONTACT FORM -->
+                    <div class="form-card reveal">
+                        <div class="form-heading">
+                            <p class="section-label">Inquiry form</p>
+                            <h2>Send Us a Message</h2>
+
+                            <p>
+                                Fields marked with an asterisk are required.
+                            </p>
+                        </div>
+
+                        <form
+                            id="contactForm"
+                            novalidate
+                            onsubmit="submitForm(event)"
+                        >
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+                                    <label for="firstName">
+                                        First Name
+                                        <span aria-hidden="true">*</span>
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="firstName"
+                                        name="firstName"
+                                        placeholder="Enter your first name"
+                                        autocomplete="given-name"
+                                        aria-describedby="firstNameError"
+                                    >
+
+                                    <small
+                                        class="error-message"
+                                        id="firstNameError"
+                                    ></small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="lastName">
+                                        Last Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="lastName"
+                                        name="lastName"
+                                        placeholder="Enter your last name"
+                                        autocomplete="family-name"
+                                    >
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    Email Address
+                                    <span aria-hidden="true">*</span>
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="example@email.com"
+                                    autocomplete="email"
+                                    aria-describedby="emailError"
+                                >
+
+                                <small
+                                    class="error-message"
+                                    id="emailError"
+                                ></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">
+                                    Mobile Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="09XX XXX XXXX"
+                                    autocomplete="tel"
+                                    inputmode="tel"
+                                    aria-describedby="phoneError"
+                                >
+
+                                <small
+                                    class="error-message"
+                                    id="phoneError"
+                                ></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="topic">
+                                    Inquiry Topic
+                                    <span aria-hidden="true">*</span>
+                                </label>
+
+                                <select
+                                    id="topic"
+                                    name="topic"
+                                    aria-describedby="topicError"
+                                >
+                                    <option value="">
+                                        Select an inquiry topic
+                                    </option>
+
+                                    <option value="activities">
+                                        Adventure Activities
+                                    </option>
+
+                                    <option value="springs">
+                                        Hot and Cold Springs
+                                    </option>
+
+                                    <option value="accommodation">
+                                        Accommodation
+                                    </option>
+
+                                    <option value="group">
+                                        Group Visit
+                                    </option>
+
+                                    <option value="event">
+                                        Event or Function
+                                    </option>
+
+                                    <option value="other">
+                                        Other Inquiry
+                                    </option>
+                                </select>
+
+                                <small
+                                    class="error-message"
+                                    id="topicError"
+                                ></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">
+                                    Message
+                                    <span aria-hidden="true">*</span>
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="6"
+                                    maxlength="500"
+                                    placeholder="Tell us about your inquiry..."
+                                    aria-describedby="messageError messageCount"
+                                ></textarea>
+
+                                <div class="textarea-information">
+                                    <small
+                                        class="error-message"
+                                        id="messageError"
+                                    ></small>
+
+                                    <small id="messageCount">
+                                        0 / 500
+                                    </small>
+                                </div>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary submit-button"
+                            >
+                                Send Message
+                                <span aria-hidden="true">→</span>
+                            </button>
+
+                            <p class="form-disclaimer">
+                                This demonstration form validates input in
+                                the browser. It does not send information to
+                                a server.
+                            </p>
+
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- LOCATION SECTION -->
+            <section class="location-section">
+                <div class="container location-content reveal">
+                    <span class="location-large-icon" aria-hidden="true">
+                        📍
+                    </span>
+
+                    <p class="section-label">Find the destination</p>
+
+                    <h2>Visit Balungao, Pangasinan</h2>
+
+                    <p>
+                        Mt. Balungao Hilltop Adventure and Hot Spring Resort
+                        is located along Mt. Balungao Road in Balungao,
+                        Pangasinan.
+                    </p>
+
+                    <a
+                        class="btn btn-primary"
+                        href="https://www.google.com/maps/search/?api=1&query=Balungao+Hilltop+Adventure+and+Hot+Spring"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Open in Google Maps
+                    </a>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span aria-hidden="true">⛰</span>
+
+                    <div>
+                        <strong>Mt. Balungao</strong>
+                        <small>Hilltop Adventure</small>
+                    </div>
+                </div>
+
+                <p>
+                    Adventure, relaxation, and nature in
+                    Balungao, Pangasinan.
+                </p>
+            </div>
+
+            <div class="footer-navigation">
+                <h2>Quick Links</h2>
+
+                <button
+                    type="button"
+                    onclick="showPage('home', this)"
+                >
+                    Home
+                </button>
+
+                <button
+                    type="button"
+                    onclick="showPage('about', this)"
+                >
+                    About
+                </button>
+
+                <button
+                    type="button"
+                    onclick="showPage('contact', this)"
+                >
+                    Contact
+                </button>
+            </div>
+
+            <div class="footer-contact">
+                <h2>Location</h2>
+
+                <p>
+                    Mt. Balungao Road
+                    <br>
+                    Balungao, Pangasinan
+                    <br>
+                    Philippines
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>
+                    &copy; <span id="currentYear"></span>
+                    Mt. Balungao Hilltop Adventure.
+                    Educational website project.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================================
+         SUCCESS TOAST
+    ========================================== -->
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+    >
+        <div class="toast-icon" aria-hidden="true">✓</div>
+
+        <div>
+            <strong>Message validated!</strong>
+
+            <p>
+                Your inquiry passed the form validation.
+            </p>
+        </div>
+
+        <button
+            type="button"
+            class="toast-close"
+            onclick="hideToast()"
+            aria-label="Close notification"
+        >
+            ×
+        </button>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button
+        type="button"
+        class="back-to-top"
+        id="backToTop"
+        onclick="scrollToTop()"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+</body>
+</html>
